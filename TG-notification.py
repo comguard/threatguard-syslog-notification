@@ -5,7 +5,7 @@ import logging
 import logging.handlers
 import sys
 import getopt
-import os.path
+import os
 from datetime import datetime
 
 url = ''
@@ -45,7 +45,7 @@ old_IDs = []
 old_Dates = []
 logs = ""
 
-if (os.path.isfile("./Export-old.xml")):
+if (os.path.isfile("./Export-old.xml") and not (os.stat("./Export-old.xml").st_size == 0)):
     oldRoot = ET.parse('./Export-old.xml').getroot()
     for threat in oldRoot.findall('THREAT'):
         old_IDs.append(threat.find('ID').text)
