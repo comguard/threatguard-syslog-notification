@@ -106,9 +106,8 @@ for threat in root.findall('THREAT'):
             newThreat += 'CVE_LINK="'
             newThreat += cve.replace("\n", "|")
             newThreat += endOfStr
-        cvePublished = threat.find('CVE_PUBLISHED')
+        cvePublished = threat.find('CVE_PUBLISHED').text
         if not (cvePublished is None):
-            cvePublished = cvePublished.text
             newThreat += 'CVE_PUBLISHED="'
             newThreat += cvePublished
             newThreat += endOfStr
