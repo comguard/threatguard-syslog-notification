@@ -5,7 +5,8 @@ This script serves as a generator of a push notification, when a new threat is a
 ## 💾 Install
 
 ### Requirements:
-- Python 3.6 or higher, pip
+- python 3.6 or higher
+- pip
 
 Following these steps, you will download the script and prepare everything for usage.
 
