@@ -1,6 +1,6 @@
 # ThreatGuard Syslog Generator
 
-This script serves as a generator of a push notification, when a new threat is added to ThreaGuard application. After fetching data from ThreatGuard, a new notification is created and sent to a server in form of a **syslog**.
+This script serves as a generator of a push notification, when a new threat is added to ThreatGuard application. After fetching data from ThreatGuard, a new notification is created and sent to a server in form of a **syslog**.
 
 ## 💾 Install
 
@@ -46,7 +46,7 @@ Run the script using command:
 python3 TG-notification.py -u <threatguard_url> -s <server_IP> -p <server_port>
 ```
 ### Parameters:
-- `threatguard-url` - URL of XML Export page of [ThreatGuard](https://portal.threatguard.cz). You can find the Export page in ThreaGuard portal <Account_name> -> Export -> Česky/Anglicky
+- `threatguard-url` - URL of XML Export page of [ThreatGuard](https://portal.threatguard.cz). You can find the Export page in ThreatGuard portal <Account_name> -> Export -> Česky/Anglicky
 - `server_IP` - IP address or domain name of server, where you want to send the syslog
 - `server_port` - port, on which the server is listening for syslog
 
