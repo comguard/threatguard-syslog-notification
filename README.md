@@ -14,7 +14,7 @@ Following these steps, you will download the script and prepare everything for u
 1. Clone this repository
 
     ```bash
-    git clone https://github.com/ondromalik/threatguard-syslog-push.git
+    git clone https://github.com/comguard/threatguard-syslog-push.git
     ```
 
 2. Move to created folder
