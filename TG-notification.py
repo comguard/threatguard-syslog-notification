@@ -111,9 +111,11 @@ for threat in root.findall('THREAT'):
             newThreat += 'CVE_PUBLISHED="'
             newThreat += cvePublished
             newThreat += endOfStr
-        newThreat += 'SHORT_DESCRIPTION="'
-        newThreat += threat.find('DESC_SHORT').text
-        newThreat += endOfStr
+        shortDescription = threat.find('DESC_SHORT')
+        if shortDescription is not None:
+            newThreat += 'SHORT_DESCRIPTION="'
+            newThreat += threat.find('DESC_SHORT').text
+            newThreat += endOfStr
         newThreat += 'THREAT_LINK="'
         newThreat += threat.find('THREAT_LINK').text
         newThreat += '"'
